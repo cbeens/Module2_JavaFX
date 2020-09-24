@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
+<HBox alignment="center" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <ListView fx:id="vehiclesListView" prefHeight="100.0" prefWidth="200.0" />
+   <VBox prefHeight="200.0" prefWidth="200.0">
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
-   <children>
-      <VBox prefHeight="200.0" prefWidth="100.0" />
-      <HBox prefHeight="100.0" prefWidth="200.0">
-         <children>
-            <Label text="Label" />
-            <TextField prefHeight="25.0" prefWidth="143.0" />
-         </children>
-      </HBox>
-   </children>
-</GridPane>
+   </VBox>
+
+
+</HBox>

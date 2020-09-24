@@ -1,6 +1,6 @@
 package sample;
 
-public class Car extends Vehicle {
+public class Car extends Vehicle implements Tracker{
 
     //constructors
 
@@ -27,4 +27,15 @@ public class Car extends Vehicle {
         this.mileage = mileage;
     }
 
+
+    //implementing interface Tracker methods
+    @Override
+    public double calculateFuelCost() {
+        return 0;
+    }
+
+    @Override
+    public double calculateMaintenanceCost() {
+        return 0;
+    }
 }

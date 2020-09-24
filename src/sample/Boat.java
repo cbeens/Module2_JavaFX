@@ -4,13 +4,13 @@ public class Boat extends Vehicle implements Tracker {
 
     //Tracker methods
     @Override
-    public void calculateFuelCost() {
-
+    public double calculateFuelCost() {
+        return 0;
     }
 
     @Override
-    public void calculateMaintenanceCost() {
-
+    public double calculateMaintenanceCost() {
+        return 0;
     }
 
     //field variables

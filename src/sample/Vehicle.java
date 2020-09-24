@@ -2,12 +2,27 @@ package sample;
 
 import java.util.Random;
 
-public class Vehicle {
+public class Vehicle implements Rental {
+
 
     //field variables
     private String name;
     private int builtYear;
     private String owner;
+    private boolean isRented;
+
+    //Rental methods
+    @Override
+    public void rentedOut() {
+        isRented = true;
+    }
+
+    @Override
+    public void returnedBack() {
+        isRented = false;
+    }
+
+
 
     //private array variable that can hold 4 integers
     private int[] arr = new int[4];
@@ -72,4 +87,6 @@ public class Vehicle {
         }
 
     }
+
+
 }
